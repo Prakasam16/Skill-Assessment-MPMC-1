@@ -27,7 +27,7 @@ To write and execute an Assembly Language Program in **8086** to find the **smal
 
 ## FLOWCHART
 ```plaintext
-  ┌───────────────┐
+ ┌───────────────┐
  │     Start     │
  └───────┬───────┘
          │
@@ -69,7 +69,7 @@ To write and execute an Assembly Language Program in **8086** to find the **smal
 
 ## PROGRAM
 
-```asm
+```
 CODE SEGMENT
 ASSUME CS:CODE, DS:CODE
 ORG 1000H
