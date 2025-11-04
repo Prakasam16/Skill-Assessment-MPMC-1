@@ -64,9 +64,7 @@ To write and execute an Assembly Language Program in **8086** to find the **smal
            ▼
  ┌───────────────┐
  │     End       │
- └───────────────┘
-
----asm
+ └─────────────── 
 
 ## PROGRAM
 
@@ -110,6 +108,7 @@ MEMORY LOCATION
 | 2005H           | 02H         | Smallest Number (Result)     |
 
 OUTPUT
+
 ![skill 1](https://github.com/user-attachments/assets/8c167231-a237-4bb4-81fe-290e1b00fabb)
 
 
