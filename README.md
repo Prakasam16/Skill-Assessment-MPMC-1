@@ -112,5 +112,6 @@ OUTPUT
 
 
 RESULT
+
 Thus, the Assembly Language Program for 8086 microprocessor to find the smallest number in an array using conditional jump instructions was successfully written and executed using MASM/EMU8086.
 
