@@ -26,57 +26,40 @@ To write and execute an Assembly Language Program in **8086** to find the **smal
 ---
 
 ## FLOWCHART
-          ┌─────────────────────────┐
-        │         Start           │
-        └───────────┬─────────────┘
-                    │
-                    ▼
-        ┌─────────────────────────┐
-        │ Initialize SI = 2000H   │
-        │ Load first value into AL│
-        │ Set CX = N-1            │
-        └───────────┬─────────────┘
-                    │
-                    ▼
-        ┌─────────────────────────┐
-        │ Load next value into BL │
-        │ Increment SI            │
-        └───────────┬─────────────┘
-                    │
-                    ▼
-        ┌─────────────────────────┐
-        │ Compare AL, BL          │
-        └───────┬───────┬────────┘
-                │       │
-         BL < AL?       │
-          ┌────┴───┐    │No
-          │ Yes     │    ▼
-          ▼         │Keep AL same
- ┌─────────────────────────┐
- │ Move BL to AL           │
- └──────────┬──────────────┘
-            │
-            ▼
-        ┌──────────────┐
-        │ Decrement CX │
-        └──────┬───────┘
-               │
-       ┌───────▼────────┐
-       │ CX = 0 ?        │
-       └──────┬──────────┘
-              │No
-              ▼
-        ┌──────────────┐
-        │ Repeat Loop  │
-        └──────┬───────┘
-              │Yes
-              ▼
-        ┌─────────────────────────┐
-        │ Store smallest value    │
-        │ Result at memory        │
-        │ End Program             │
-        └─────────────────────────┘
-
+             ┌────────────────────┐
+        │       Start        │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │ SI = 2000H         │
+        │ Load AL = [SI]     │
+        │ CX = N-1           │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │ INC SI             │
+        │ Load BL = [SI]     │
+        │ CMP BL, AL         │
+        └──────┬─────┬───────┘
+               │Yes   │No
+               ▼      ▼
+   ┌────────────────────┐
+   │ AL = BL (new min)  │
+   └─────────┬──────────┘
+             │
+             ▼
+        ┌────────────────────┐
+        │ DEC CX             │
+        │ CX = 0 ?           │
+        └──────┬─────┬───────┘
+               │No    │Yes
+               ▼      ▼
+        ┌──────────┐ ┌──────────┐
+        │ Repeat   │ │ Store AL │
+        └──────────┘ │ End      │
+                     └──────────┘
 ---
 
 ## PROGRAM
@@ -120,11 +103,9 @@ MEMORY LOCATION
 | 2004H           | 0AH         | Number 5                     |
 | 2005H           | 02H         | Smallest Number (Result)     |
 
-##OUTPUT
+OUTPUT
 
 
-#RESULT 
 RESULT
-
 Thus, the Assembly Language Program for 8086 microprocessor to find the smallest number in an array using conditional jump instructions was successfully written and executed using MASM/EMU8086.
 
