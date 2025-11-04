@@ -26,7 +26,7 @@ To write and execute an Assembly Language Program in **8086** to find the **smal
 ---
 
 ## FLOWCHART
-    ┌────────────────────┐
+       ┌────────────────────┐
     │       Start        │
     └───────┬────────────┘
             │
@@ -62,7 +62,6 @@ To write and execute an Assembly Language Program in **8086** to find the **smal
     │ Store AL → [2005H] │
     │ End Program        │
     └────────────────────┘
-
 ---
 
 ## PROGRAM
