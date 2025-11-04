@@ -109,6 +109,8 @@ MEMORY LOCATION
 
 OUTPUT
 
+<img width="634" height="425" alt="Screenshot 2025-11-04 201236" src="https://github.com/user-attachments/assets/f6f928ac-1e75-4196-abc2-1881e8c7f81a" />
+
 ![skill 1](https://github.com/user-attachments/assets/8c167231-a237-4bb4-81fe-290e1b00fabb)
 
 
