@@ -65,10 +65,10 @@ To write and execute an Assembly Language Program in **8086** to find the **smal
  ┌───────────────┐
  │     End       │
  └─────────────── 
+```
+### PROGRAM
 
-## PROGRAM
-
-```asm
+```
 CODE SEGMENT
 ASSUME CS:CODE, DS:CODE
 ORG 1000H
